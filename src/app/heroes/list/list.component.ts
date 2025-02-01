@@ -20,4 +20,8 @@ export class ListComponent {
     const deletedHeroe = this.heroesList.pop();
     this.deletedHeroe = deletedHeroe || '';
   }
+
+  resetHeores():void {
+     this.heroesList.push(this.deletedHeroe)
+  }
 }

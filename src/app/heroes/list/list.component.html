@@ -7,6 +7,10 @@
     Borrar ultimo heroe
 </button>
 
+<button (click)="resetHeores()"  class="btn btn-outline-success">
+    Reiniciar lista
+</button>
+
 <ul class="mt-2 list-group">
     <li *ngFor="let name of heroesList" class="list-group-item"> {{name}}</li>
 </ul> 
